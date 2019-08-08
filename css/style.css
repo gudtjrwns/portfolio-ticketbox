@@ -1,0 +1,333 @@
+/*헤더*/
+/*헤더 공통적용*/
+#header,.con-box,#footer{width: 100%; overflow: hidden;}
+.inner{width: 1200px; margin: 0 auto; position: relative;}
+#header{background: #e3ebff; position: fixed; left: 0; top: 0px; z-index: 100;}
+#header .inner{height: 80px;}
+/*헤더 공통적용*/
+
+/*로고*/
+#header h1{position: absolute; left: 0; bottom: 10px;}
+#header h1 a img{width: 80%;}
+/*로고*/
+
+/*네비*/
+#gnb {position: absolute; right: 10%; bottom: 10px;}
+#gnb li{float: left; margin-left: 50px;}
+#gnb li.on{border-bottom:2px solid rgba(0, 0, 0, 0.30);}
+#gnb li a{font-size: 20px; font-weight: bold;}
+/*네비*/
+
+/*메뉴*/
+#header .menu {float:right; position: absolute; right: 0; top: 10px;}
+#header .menu li {float:left; padding: 0 15px;}
+#header .menu li:first-child {border-right: 2px solid rgba(0, 0, 0, 0.30);}
+#header .menu li a img{width: 20px; opacity: 0.7;}
+/*메뉴*/
+/*헤더*/
+
+
+/*바디*/
+/*컨테이너 공통적용*/
+#container{height: 100%;}
+#container:after{clear: both; display: block; content: ''}
+.con-box {background: linear-gradient(to top,#f2f2f2,white);}
+.con-box .inner {width: 1200px; height: 850px; position: relative; box-sizing: border-box; margin: 0 auto;}
+.con-box h2{font-size: 30px; padding: 30px; margin: 70px 0 50px 0; color: #000; text-align: center; font-weight: bold; border-top:2px solid #969696;}
+/*컨테이너 공통적용*/
+
+/*메인 배너*/
+.main-banner {position: relative; width: 100%; height: 800px; overflow: hidden;}
+.main-banner .images {}
+.main-banner .images li {width: 100%; height: 800px; background-repeat:no-repeat; background-position: 0 0; background-size: cover; position: absolute; left: -100%; top: 0;}
+.main-banner .images li:nth-child(1) {background-image: url(../images/main-banner-big0.jpg); left: 0;}
+.main-banner .images li:nth-child(2) {background-image: url(../images/main-banner-big1.jpg);}
+.main-banner .images li:nth-child(3) {background-image: url(../images/main-banner-big2.jpg);}
+.main-banner .images li:nth-child(4) {background-image: url(../images/main-banner-big3.jpg);}
+.main-banner .images li:nth-child(5) {background-image: url(../images/main-banner-big4.jpg);}
+.main-banner .images li:nth-child(6) {background-image: url(../images/main-banner-big5.jpg);}
+.main-banner .images li:nth-child(7) {background-image: url(../images/main-banner-big6.jpg);}
+.main-banner .images li:nth-child(8) {background-image: url(../images/main-banner-big7.jpg);}
+.main-banner .text-box {position:absolute; top: 50%; left: 50%; transform: translate(-50%,-30%); text-align: center;}
+.main-banner .text-box input:focus, textarea:focus {outline: none;}
+.main-banner .text-box h3 {color:#fff; font-size: 1.5rem; text-shadow: 2px 2px 2px #000; font-weight: bold;}
+.main-banner .text-box h2 {color:#fff; font-size: 3rem; text-shadow: 2px 2px 2px #000; font-weight: bold;}
+.main-banner .text-box input[type="search"] {display: block; margin: 10px auto 0 auto; }
+.main-banner .text-box input[type="submit"] {width:100px; height:50px; background: blue; color:white; font-weight: bold; border:none; margin:15px 0; font-size: 15px;}
+.main-banner .paging {position: absolute; bottom: 5%; left: 50%;}
+.main-banner .paging li{background: #fff; border-radius: 50%; margin-right: 15px; width: 10px; height: 10px; float: left; transform:translateX(-90px);}
+.main-banner .paging li.on {background: skyblue; width: 30px; border-radius: 15px;}
+.main-banner .btn-box {}
+.main-banner .btn-box a img {width: 70px;}
+.main-banner .btn-box .btn {float: left; position: absolute; top: 50%;}
+.main-banner .btn-box .prev {left: 5%;}
+.main-banner .btn-box .next {right: 5%;}
+/*메인 배너*/
+
+
+/*소개*/
+.info {}
+.info .text-box {float: left; width: 70%;}
+.info .text-box p {font-size: 1.4rem; margin-bottom: 30px; color:#706666; opacity:0.8;}
+.info .img-box {float: right; width: 300px;}
+.info .img-box img {width: 100%; box-shadow:0px 5px 5px 5px #d3d3d3;}
+/*소개*/
+
+
+/*추천*/
+.feature-box {clear:both;}
+.feature-box .inner {width: 100%;}
+.feature-box .feature {position: relative; height: 400px; overflow: hidden;}
+.feature-box .feature .text-box {position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: 100%; z-index: 1; color: #fff; text-align: center; line-height: 2;}
+.feature-box .feature .text-box h3 {font-size: 1.8rem; color: blue; font-weight: bold;}
+.feature-box .feature .text-box h3+p {font-size: 1rem;}
+.feature-box .feature .text-box ul {margin-top: 50px;}
+.feature-box .feature .text-box ul li {float: left; width: 33.3%;}
+.feature-box .feature .text-box ul li+span {color:#fff;}
+.feature-box .feature .text-box ul li h4 {font-size: 18px; font-weight:bold;}
+.feature-box .feature .text-box ul li h4+p {font-size: 14px;}
+.feature-box .feature .skewd-box {position: absolute; top: 0; left: 0; width: 60%; height: 100%; padding: 50px 80px; transform: skewX(30deg) translateX(-85px); overflow: hidden;} 
+.feature-box .feature .skewd-box .box {transform: skewX(-30deg);}
+.feature-box .feature .skewd-box:before {content: ''; width: 200%; height: 100%; position: absolute; top: 0; left: 0; background: #3d3d3d; background-size: cover; transform: skewX(-30deg) translateX(-85px);}
+.feature-box .feature .skewd-box2 {width: 100%; height: 100%; background-color: #616161;}
+.feature-box .feature .text-box [class^="icon-"]:before, [class*=" icon-"]:before {color:#fff; font-size: 70px;}
+/*추천*/
+
+
+/*서비스*/
+.service {}
+.service .img-box {float: left; margin: 0 50px 30px 0; width: 50%;}
+.service .img-box img {width: 100%;}
+.service .view-more {display: inline-block; width: 45%; overflow: hidden; }
+.service .view-more h3 {margin-bottom: 30px;}
+.service .view-more h3 a {font-size: 1.5rem; font-weight: bold;}
+.service .view-more h3 .more-btn a {background: #454545; color:#fff; width:3rem; text-align: center; line-height: 1.8; float:right; border-radius:5px;}
+.service .view-more .list {overflow: hidden;}
+.service .view-more .list li {font-size: 1rem; padding: 1rem 0; border-bottom: 1px solid #000;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.service .view-more .list li:first-of-type {border-top: 1px solid #000;}
+.service .list-box {clear: both;}
+.service .list-box li {border: 1px solid #000; display: inline-block; margin-right: 10px; overflow: hidden; background: #fff;}
+.service .list-box li.on a {background: #000090; color: #fff; border:none;}
+.service .list-box li a {color: #000; font-weight: bold; padding: 30px; line-height: 5;}
+.service .list-box li a:hover {background: #000090; color: #fff; border:none;}
+/*서비스*/
+
+
+/*이름-박스*/
+.name-box {background-image: url("../images/main-banner-big2.jpg"); background-size: cover; background-attachment: fixed; height: 250px; position: relative;}
+.name-box .inner {width: 100%;}
+.name-box .name {position: absolute; left: 50%; transform: translate(-50%, 30%); color:#fff; text-align: center;}
+.name-box .name h2 {font-size: 4rem; font-weight:bold;}
+.name-box .name p {font-size: 1.5rem;}
+/*이름-박스*/
+
+
+/*공지사항*/
+.notice {width: 75%; margin: 0 auto; overflow: hidden;}
+.notice dt{}
+.notice dt a{display: block; width: 100%; line-height: 50px; font-size: 1rem; text-indent: 20px; background: #000090;color: #fff; border-radius:15px; margin-bottom: 15px;}
+.notice dt.on a{background: skyblue; color: #000; margin-bottom: 15px;}
+.notice dt a:hover {background: skyblue; color: #000;}
+.notice dd{width: 100%; background: #ececd3; border-radius:15px; margin-bottom: 10px;}
+.notice dd p{padding: 15px; font-size: 1.25rem;}
+/*공지사항*/
+
+
+/*문의사항*/
+#contact input:focus, textarea:focus{outline: none;}
+#contact {margin: 0 auto; width:50%; text-align: center;}
+#contact .contact {border: 1px solid gray; margin: 15px 0; background: #fff;}
+#contact .contact-message {border: 1px solid #000;}
+#contact .contact-text {background: #fff; text-align: left; height:100px; overflow-x: hidden; overflow-y: scroll; line-height: 1.8; border:1px solid gray; padding:15px; margin:15px 0;}
+#contact .contact-text h5 {font-size: 16px; font-weight: 600;}
+#contact .contact-text h6 {font-size: 14px; }
+#contact .contact-text ol {margin:5px 0;}
+#contact .contact-text ol li {color:#7d7d7d; list-style:decimal; margin-left: 20px;}
+#contact .contact-checkbox {text-align: left; margin:15px 0; font-size: 1.3rem;}
+#contact input[type="submit"] {width:100px; height:50px; background: #000; color:white; border:none; margin:15px 0; font-size: 1rem;}
+/*문의사항*/
+/*바디*/
+
+
+/*풋터*/
+#footer {background: #979797;}
+#footer .inner {width:100%; padding: 50px; position: relative; height: 150px; line-height: 2;}
+#footer ul {}
+#footer ul li {font-size: 17px; float: left; width:33.1%; line-height: 3;}
+#footer ul li .right {display: inline; margin-left: 10px;}
+#footer ul li .icon-sns {color:#fff; display: inline-block; width:100%;}
+#footer ul li .icon-sns li {color:#fff; width:10%; margin-right: 20px;}
+#footer ul li .icon-sns li .label {display: none;}
+#footer p {position: absolute; clear:both; bottom: 0; left: 0; width:100%; font-size: 13px; font-weight: bold; padding: 10px 0; background: #000; color:#fff; text-indent: 50px;}
+/*풋터*/
+
+
+/*버튼*/
+.bottom{position: fixed;  bottom: 15%; right: 0;}
+.bottom a{display: block; width:40px; height:40px; line-height: 35px; font-size: 25px; text-align: center; background: #000; color: #fff; opacity:0.5; border-radius: 10%;}
+/*버튼*/
+
+
+
+/*반응형*/
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    #header .inner{height: 70px; width: 100%;}
+    #header h1{left: 50%; bottom: 50%; transform: translate(-35%, 50%);}
+    #header h1 a img{width: 70%;}
+    .dd-menu {position: absolute; top: 50%; right: 10px; transform: translateY(-50%); display: block; width: 42px; height: 42px;}
+    .dd-menu span {display: block; position: absolute; top: 50%; width: 100%; height: 2px; background: gray;  transform: translate(0,-50%);}
+    .dd-menu span:before, .dd-menu span:after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: gray;}
+    .dd-menu span:before {top:-13px;}
+    .dd-menu span:after {top:13px;}
+    .dd-menu.on span:before {top:0; transform: rotate(45deg);}
+    .dd-menu.on span {background: #e3ebff;}
+    .dd-menu.on span:after {top:0; transform: rotate(-45deg);}
+    #nav {}
+    #gnb {position: absolute; left:0; top: 110px; width: 100%; height: 150px; display: none;}
+    #gnb li {float: none; margin-left: 0; text-indent: 20px; border-top: 1px solid #dadada; padding: 5px 0;}
+    #gnb li:hover {background: #f2f2f2;}
+    #gnb li.on {border-bottom: 1px solid #dadada;}
+    #gnb li a{font-size: 1.2rem; font-weight: bold; display: block;}
+    #header .menu {top: 80px; right: 10px; display: none;}
+    .con-box .inner {width: 95%;}
+    .info .text-box {width: 65%;}
+    .service .view-more {width: 42%;}
+    .service .list-box li {margin-top: 30px;}
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    #header .inner{height: 70px; width: 100%;}
+    #header h1{left: 50%; bottom: 50%; transform: translate(-35%, 50%);}
+    #header h1 a img{width: 70%;}
+    .dd-menu {position: absolute; top: 50%; right: 10px; transform: translateY(-50%); display: block; width: 42px; height: 42px;}
+    .dd-menu span {display: block; position: absolute; top: 50%; width: 100%; height: 2px; background: gray;  transform: translate(0,-50%);}
+    .dd-menu span:before, .dd-menu span:after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: gray;}
+    .dd-menu span:before {top:-13px;}
+    .dd-menu span:after {top:13px;}
+    .dd-menu.on span:before {top:0; transform: rotate(45deg);}
+    .dd-menu.on span {background: #e3ebff;}
+    .dd-menu.on span:after {top:0; transform: rotate(-45deg);}
+    #nav {}
+    #gnb {position: absolute; left:0; top: 110px; width: 100%; height: 150px; display: none;}
+    #gnb li {float: none; margin-left: 0; text-indent: 20px; border-top: 1px solid #dadada; padding: 5px 0;}
+    #gnb li:hover {background: #f2f2f2;}
+    #gnb li.on {border-bottom: 1px solid #dadada;}
+    #gnb li a{font-size: 1.2rem; font-weight: bold; display: block;}
+    #header .menu {top: 80px; right: 10px; display: none;}
+    .con-box .inner {width: 95%;}
+    .con-box h2{padding: 30px; margin: 50px 0 0 0;}
+    #content0 {height: 1150px;}
+    #content1 {height: 1150px;}
+    #content2 {height: 750px;}
+    #content3 {height: 850px;}
+    .main-banner {height: 600px; width: 100%;}
+    .main-banner .text-box h3 {font-size: 1rem;}
+    .main-banner .text-box h2 {font-size: 1.7rem;}
+    .main-banner .text-box input[type="search"] {width:300px;}
+    .main-banner .btn-box a img {width: 50px;}
+    .info .text-box {width: 100%; float: none;}
+    .info .text-box p {font-size: 1.2rem; margin-bottom: 20px; opacity:0.8; line-height: 1.7;}
+    .info .img-box {float:none; margin: 0 auto 1.5rem auto;}
+    .feature-box .feature {height: 300px;}
+    .feature-box .feature .text-box h3 {font-size: 1.5rem;}
+    .feature-box .feature .text-box h3+p {font-size: 0.8rem;}
+    .feature-box .feature .text-box ul li h4 {font-size: 1rem;}
+    .feature-box .feature .text-box ul li h4+p {font-size: 0.6rem;}
+    .feature-box .feature .text-box [class^="icon-"]:before, [class*=" icon-"]:before {font-size: 50px;}
+    .service .img-box {width: 100%;}
+    .service .view-more {width: 100%; margin: 15px 0 25px 0;}
+    .service .view-more h3 {margin-bottom: 15px;}
+    .service .view-more .list li {padding: 0.7rem 0;}
+    .service .list-box li {margin-top: 0;}
+    .service .list-box li a {padding: 15px; line-height: 3.4;}
+    .name-box {height: 200px;}
+    .name-box .name {transform: translate(-50%, 50%);}
+    .name-box .name h2 {font-size: 3rem;}
+    .name-box .name p {font-size: 1rem;}
+    .notice {width: 100%;}
+    .notice dt a {margin-bottom: 7px; line-height: 40px;}
+    .notice dt.on a {margin-bottom: 7px;}
+    .notice dd{margin-bottom: 7px;}
+    .notice dd p{padding: 15px; font-size: 1.25rem;}
+    
+    
+    #contact {width:100%;}
+    #contact .contact {margin:10px 0;}
+    #contact .contact-text {margin:10px 0;}
+    #contact .contact-checkbox {font-size: 1rem;}
+    #footer .inner {padding: 20px 10px;}
+    #footer ul li {width:50%; line-height: 2; font-size: 1rem;}
+    #footer ul li .icon-sns {margin: 20px 10px;}
+    #footer ul li .icon-sns li {width:10%; margin-right: 30px;}
+    #footer p {padding: 7px 0; text-indent: 50px; font-size: 10px;}
+}
+@media screen and (max-width: 480px) {
+    #header .inner{height: 70px; width: 100%;}
+    #header h1{left: 50%; bottom: 50%; transform: translate(-35%, 50%);}
+    #header h1 a img{width: 70%;}
+    .dd-menu {position: absolute; top: 50%; right: 10px; transform: translateY(-50%); display: block; width: 30px; height: 30px;}
+    .dd-menu span {display: block; position: absolute; top: 50%; width: 100%; height: 2px; background: gray;  transform: translate(0,-50%);}
+    .dd-menu span:before, .dd-menu span:after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: gray;}
+    .dd-menu span:before {top:-10px;}
+    .dd-menu span:after {top:10px;}
+    .dd-menu.on span:before {top:0; transform: rotate(45deg);}
+    .dd-menu.on span {background: #e3ebff;}
+    .dd-menu.on span:after {top:0; transform: rotate(-45deg);}
+    #nav {}
+    #gnb {position: absolute; left:0; top: 110px; width: 100%; height: 150px; display: none;}
+    #gnb li {float: none; margin-left: 0; text-indent: 20px; border-top: 1px solid #dadada; padding: 5px 0;}
+    #gnb li:hover {background: #f2f2f2;}
+    #gnb li.on {border-bottom: 1px solid #dadada;}
+    #gnb li a{font-size: 1.2rem; font-weight: bold; display: block;}
+    #header .menu {top: 80px; right: 10px; display: none;}
+    .con-box .inner {width: 95%;}
+    .con-box h2{padding: 30px; margin: 50px 0 0 0;}
+    #content0 {height: 1400px;}
+    #content1 {height: 1000px;}
+    #content2 {height: 800px;}
+    #content3 {height: 850px;}
+    .main-banner {height: 500px; width: 100%;}
+    .main-banner .text-box h3 {font-size: 0.8rem;}
+    .main-banner .text-box h2 {font-size: 1.5rem;}
+    .main-banner .text-box input[type="search"] {width:200px;}
+    .main-banner .text-box input[type="submit"] {width:90px; height:40px;}
+    .main-banner .paging {width: 100%;}
+    .main-banner .paging li.on {width: 25px;}
+    .main-banner .btn-box a img {width: 40px;}
+    .info .text-box {width: 100%; float: none;}
+    .info .text-box p {font-size: 1.2rem; margin-bottom: 20px; opacity:0.8; line-height: 1.7;}
+    .info .img-box {float:none; margin: 0 auto 1.5rem auto;}
+    .feature-box .feature {height: 350px;}
+    .feature-box .feature .text-box {top: 15px;}
+    .feature-box .feature .text-box h3 {font-size: 1.3rem; display: none;}
+    .feature-box .feature .text-box h3+p {font-size: 0.8rem; display: none;}
+    .feature-box .feature .text-box ul {margin-top: 0px;}
+    .feature-box .feature .text-box ul li {float: none; margin: 15px auto; width: 100%;}
+    .feature-box .feature .text-box ul li h4 {font-size: 0.9rem;}
+    .feature-box .feature .text-box ul li h4+p {font-size: 0.6rem;}
+    .feature-box .feature .text-box [class^="icon-"]:before, [class*=" icon-"]:before {font-size: 35px;}
+    .service .img-box {width: 100%;}
+    .service .view-more {width: 100%; margin: 15px 0 25px 0;}
+    .service .view-more h3 {margin-bottom: 15px;}
+    .service .view-more .list li {padding: 0.7rem 0;}
+    .service .list-box li {margin-top: 0;}
+    .service .list-box li a {padding: 15px; line-height: 3.4;}
+    .name-box {height: 200px;}
+    .name-box .name {transform: translate(-50%, 85%);}
+    .name-box .name h2 {font-size: 2rem;}
+    .name-box .name p {font-size: 1rem;}
+    .notice {width: 100%;}
+    .notice dt a {margin-bottom: 7px; line-height: 40px;}
+    .notice dt.on a {margin-bottom: 7px;}
+    .notice dd{margin-bottom: 7px;}
+    .notice dd p{padding: 15px; font-size: 1.25rem;}
+    #contact {width:100%;}
+    #contact .contact {margin:10px 0;}
+    #contact .contact-text {margin:10px 0;}
+    #contact .contact-checkbox {font-size: 1rem;}
+    #footer .inner {padding: 20px 10px; height: 250px;}
+    #footer ul li {width:100%; line-height: 2.5; font-size: 1rem; float: none;}
+    #footer ul li .icon-sns {margin: 20px 10px;}
+    #footer ul li .icon-sns li {width:10%; margin-right: 30px; float: left;}
+    #footer p {padding: 7px 0; text-indent: 0px; text-align: center; font-size: 10px;}
+}
+/*반응형*/
